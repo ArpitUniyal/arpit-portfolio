@@ -277,6 +277,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-off
     margin-left:0;
     min-width:0;
   }
+   .project-info{
+  display:block;
+  min-width:0;
+}
+
+.project-info p{
+  text-align:left;
+  margin-top:8px;
+}
+
+.project,
+.project-detail{
+  min-width:0;
+  max-width:100%;
+}
 
   .metric-list{
     grid-template-columns:repeat(2,1fr);
