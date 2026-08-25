@@ -258,11 +258,29 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-off
 
 /* responsive -------------------------------------------------------------*/
 @media(max-width:900px){
-  .about-grid{grid-template-columns:1fr;gap:50px}
-  .portrait-card{max-width:320px}
-  .projects{grid-template-columns:1fr}
-  .project-large{width:100%}
-  .metric-list{grid-template-columns:repeat(2,1fr)}
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .portrait-card{
+    max-width:320px;
+  }
+
+  .projects{
+    grid-template-columns:1fr;
+  }
+
+  .project-large{
+    grid-column:auto; /* Important: removes span 2 */
+    width:100%;
+    margin-left:0;
+    min-width:0;
+  }
+
+  .metric-list{
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 
 @media(max-width:700px){
